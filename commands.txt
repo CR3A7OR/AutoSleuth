@@ -1,0 +1,3 @@
+# ENTER COMMANDS BELOW (if image is required use string IMAGE_FILE)
+file IMAGE_FILE
+ls -la

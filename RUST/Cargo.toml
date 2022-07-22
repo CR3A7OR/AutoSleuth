@@ -1,0 +1,15 @@
+[package]
+name = "rustSender"
+version = "0.1.0"
+edition = "2021"
+
+#Uncomment for Windows
+#[target.x86_64-pc-windows-msvc]
+#rustflags = ["-C", "target-feature=+crt-static"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", default-features = false, features = [ "rustls-tls","blocking"] }
+bytes = "1.0"
+static_vcruntime = "1.5"
+#ring = "0.16.20"
