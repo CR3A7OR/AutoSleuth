@@ -10,15 +10,19 @@ My Bachelor level project which is split into two main individual yet cooperativ
 
 ### »│ Technical Breakdown
 #### │ Part 1:
-> - Using a `Rubber Ducky Device`, with the payload written in `Ducky Script`, it aims to make a complete and correct copy of a device's internal storage media without state change by relying on built in command line utilities of the device with additional executables such as `ftkimager` for Windows that are statically built. 
-> - The raw data is then piped over HTTPS using a `Rust` executable in 1MB chunks to listening server where a `PHP` receiver saves the received content to a image file named in the format `partition_label-ID-MM-YYYY.img`
+> - Using a `Rubber Ducky Device`, with the payload written in `Ducky Script` that aims to make a complete and correct copy of a device's internal storage media without state change by relying on built in command line utilities of the device with additional executables such as `ftkimager` for Windows that are statically built. 
+> - The raw data is then sent over HTTPS using a `Rust` executable which reads 1MB chunks from stdin and forms POST requests tracking the offset sent as string query
+> - Listening server where a `PHP` receiver saves the received content to a image file named in the format `partition_label-ID-MM-YYYY.img` tracking the offset string query
 
 #### │ Part 2: 
-> - Automated analysis of the retrieved disk image using a `Python` script which listens in on the directory of the images and once discovered proceeds to perform analysis by using `SleuthKit` tools on the image files. The outputs are then stored into a .txt file which can be reviewed after completion. 
+> - Automated analysis of the retrieved disk image using a `Python` script which listens in on the directory of the images and once discovered proceeds to perform analysis by using `SleuthKit` tools on the image files. 
+> - Outputs are then stored into a .txt file which can be reviewed after completion. 
 
 ```diff
 - THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODULATION -
 ```
+
+
 
 ## »│ Requirements
 
