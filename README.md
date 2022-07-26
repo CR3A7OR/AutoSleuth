@@ -22,11 +22,14 @@ My Bachelor level project which is split into two main individual yet cooperativ
 - THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODULATION -
 ```
 
-
-
 ## »│ Requirements
 
+» Hardware: 
+Some Device that is capable of emulating a Keyboard  
+Pico Pi
+
 ## »│ Setup 
+Run analysis.py and proceed with
 
 ## »│ Operartion
 
