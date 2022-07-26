@@ -27,6 +27,8 @@ My Bachelor level project which is split into two main individual yet cooperativ
 » Hardware: 
 Some Device that is capable of emulating a Keyboard  
 Pico Pi
+<img width="20%" src="README_Photos/Pico.png">
+
 
 ## »│ Setup 
 Run analysis.py and proceed with
