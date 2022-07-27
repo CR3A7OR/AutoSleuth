@@ -2,7 +2,7 @@
   <h1> │ AutoSleuth │ </h1>
 </div>
 
-My Bachelor level project which is split into two main individual yet cooperative parts. The project itself is a hardware based solution paired with a command line interface that relies on a rubber ducky device armed with a payload that is capable of extracting a disk image across Windows and Linux devices when plugged in. This is then distributed over a network to a receiving server and analysis of the disk image once extraction is complete can occur. The goal is for the process to be simple and streamlined once setup.
+My Bachelor level project which is split into two main individual yet cooperative parts. The project itself is a hardware based solution paired with a command line interface that relies on a rubber ducky device armed with a payload that is capable of extracting a disk image across Windows and Linux devices when plugged in. This is then distributed over a network to a receiving server and analysis of the disk image once extraction is complete can occur. The goal is for the process to be simple and streamlined once setup. *(The project is not perfect and mostly stands as a proof of concept within the proposal of automation for digital forensics)*
 | Linux  | Windows |
 |--------|---------|
 | ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ciphey/ciphey/Python%20application?label=Linux) | ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ciphey/ciphey/Python%20application?label=Windows) |
@@ -19,13 +19,13 @@ My Bachelor level project which is split into two main individual yet cooperativ
 > - Outputs are then stored into a .txt file which can be reviewed after completion. 
 
 ```diff
-- THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODULATION -
+- THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODIFICATION -
 ```
 
 ## »│ Setup 
 
-#### » Hardware: 
-Device that is capable of emulating a Keyboard on operating systems with storage for a payload. For this project a Pico Pi was used to achieve this though any device such as a [Hak5 rubber ducky](https://shop.hak5.org/products/usb-rubber-ducky-deluxe) could be used.
+### » Hardware: 
+**1.** Device that is capable of emulating a Keyboard on operating systems with storage for a payload. For this project a Pico Pi was used to achieve this though any device such as a [Hak5 rubber ducky](https://shop.hak5.org/products/usb-rubber-ducky-deluxe) could be used.
 
 <img width="20%" src="README_Photos/Pico.png">
 Tutorial for setting up a Pico Pi into a rubber ducky can be found below:
@@ -33,11 +33,30 @@ Tutorial for setting up a Pico Pi into a rubber ducky can be found below:
 [Pico Pi Rubber Ducky Setup](https://github.com/dbisu/pico-ducky)
 *(analysis.py completes steps 6-7 so only prerequisite of step 5 is required in the tutorial)*
 
-#### » Software: 
-Run `analysis.py`
+**2.** *(required for Pico Pi)* A USB that is able to store the required Rust executables and ftkimager files as the Pico Pi does not contain enough internal storage for these 
+
+### » Software: 
+```
+For successful operation the following files/folder are required:
+- Builder
+- analysis.py
+- commands.txt
+- offset.txt
+- receiverv2.php
+```
+
+Run `analysis.py` and select one of the two options
+1. Option **1** will walk you through a series of questions to setup the two devices for deployment
+2. Option **2** allows you to skip straight to the listening step for any image files to be analysed
+
+<img width="60%" src="README_Photos/analysis.png">
 
 ## »│ Operartion
 
-## »│ Use (examples)
+» Plug the Pico Pi & USB into the target machine \
+» Maintain `analysis.py` running on the server \
+» Make sure that the `receiverv2.php` is visible on a public server \
+» `commands.txt` is a template file for automation of any additional commands to be ran and have their output stored
 
-Can watch the use for both operating systems [here](https://youtu.be/3uT5HS6frBo)
+Can watch the use for both Linux and Windows operating systems [here](https://youtu.be/3uT5HS6frBo)
+
