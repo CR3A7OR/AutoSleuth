@@ -22,16 +22,19 @@ My Bachelor level project which is split into two main individual yet cooperativ
 - THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODULATION -
 ```
 
-## »│ Requirements
-
-» Hardware: 
-Some Device that is capable of emulating a Keyboard  
-Pico Pi
-<img width="20%" src="README_Photos/Pico.png">
-
-
 ## »│ Setup 
-Run analysis.py and proceed with
+
+#### » Hardware: 
+Device that is capable of emulating a Keyboard on operating systems with storage for a payload. For this project a Pico Pi was used to achieve this though any device such as a [Hak5 rubber ducky](https://shop.hak5.org/products/usb-rubber-ducky-deluxe) could be used.
+
+<img width="20%" src="README_Photos/Pico.png">
+Tutorial for setting up a Pico Pi into a rubber ducky can be found below:
+
+[Pico Pi Rubber Ducky Setup](https://github.com/dbisu/pico-ducky)
+*(analysis.py completes steps 6-7 so only prerequisite of step 5 is required in the tutorial)*
+
+#### » Software: 
+Run `analysis.py`
 
 ## »│ Operartion
 
