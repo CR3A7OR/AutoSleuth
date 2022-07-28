@@ -54,7 +54,9 @@ Run `analysis.py` and select one of the two options
 ## »│ Operartion
 
 » Plug the Pico Pi & USB into the target machine \
+⋅⋅⋅│ Ducky Code has been tested on Windows / Ubuntu / Debian \
 » Maintain `analysis.py` running on the server \
+⋅⋅⋅│ Once received the script will begin a subprocess on a new thread for analysis \
 » Make sure that the `receiverv2.php` is visible on a public server \
 » `commands.txt` is a template file for automation of any additional commands to be ran and have their output stored
 
