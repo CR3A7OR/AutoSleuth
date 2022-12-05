@@ -5,7 +5,7 @@
 My Bachelor level project which is split into two main individual yet cooperative parts. The project itself is a hardware based solution paired with a command line interface that relies on a rubber ducky device armed with a payload that is capable of extracting a disk image across Windows and Linux devices when plugged in. This is then distributed over a network to a receiving server and analysis of the disk image once extraction is complete can occur. The goal is for the process to be simple and streamlined once setup. *(The project is not perfect and mostly stands as a proof of concept within the proposal of automation for digital forensics)*
 | Linux  | Windows |
 |--------|---------|
-| ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ciphey/ciphey/Python%20application?label=Linux) | ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ciphey/ciphey/Python%20application?label=Windows) |
+| ![GitHub Workflow Status](https://github.com/CR3A7OR/AutoSleuth/blob/main/README_Photos/Linux%20passing.svg) | ![GitHub Workflow Status](https://github.com/CR3A7OR/AutoSleuth/blob/main/README_Photos/Windows%20passing.svg) |
 
 
 ### »│ Technical Breakdown
