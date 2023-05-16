@@ -62,3 +62,6 @@ Run `analysis.py` and select one of the two options
 
 Can watch the use for both Linux and Windows operating systems [here](https://youtu.be/3uT5HS6frBo)
 
+<div align="center">
+--- [ 𝗖𝗥𝟯𝗔𝗧𝟬𝗥 ] // Designed By --- 
+</div>
