@@ -22,6 +22,8 @@ My Bachelor level project which is split into two main individual yet cooperativ
 - THOUGH THESE PARTS ARE COOPERATIVE EACH ELEMENT IS FULLY FUNCTIONAL INDEPENDENTLY OF EACH OTHER ALONG FOR EASY MODIFICATION -
 ```
 
+### **[ ⇘ THE HAK5 RUBBER DUCKY SETUP IS HERE ⇙](https://github.com/CR3A7OR/AutoSleuth/tree/main/Hak5_Setup)**
+
 ## »│ Setup 
 
 ### » Hardware: 
