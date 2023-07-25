@@ -26,3 +26,5 @@ Using the Rubber Ducky some significant improvments are visible when compared to
 ✔ Faster operation \
 ✔ Single USB required \
 ✔ Less reliance on custom keyboard layout and delays for keystroke entry
+
+<!-- https://forums.hak5.org/topic/57640-new-usb-rubber-ducky-keyboard-language/-->
