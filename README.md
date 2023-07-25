@@ -2,6 +2,11 @@
   <h1> │ AutoSleuth │ </h1>
 </div>
 
+<p align="center" width="75%">
+    <img width="80%" src="README_Photos/AutoSleuthLogo.png">
+</p>
+
+
 My Bachelor level project which is split into two main individual yet cooperative parts. The project itself is a hardware based solution paired with a command line interface that relies on a rubber ducky device armed with a payload that is capable of extracting a disk image across Windows and Linux devices when plugged in. This is then distributed over a network to a receiving server and analysis of the disk image once extraction is complete can occur. The goal is for the process to be simple and streamlined once setup. *(The project is not perfect and mostly stands as a proof of concept within the proposal of automation for digital forensics)*
 | Linux  | Windows |
 |--------|---------|
