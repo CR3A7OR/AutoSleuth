@@ -112,15 +112,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "fyp_code"
-version = "0.1.0"
-dependencies = [
- "bytes",
- "reqwest",
- "ring",
-]
-
-[[package]]
 name = "h2"
 version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -448,6 +439,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "rustSender"
+version = "0.1.0"
+dependencies = [
+ "bytes",
+ "reqwest",
+ "static_vcruntime",
+]
+
+[[package]]
 name = "rustls"
 version = "0.20.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -534,6 +534,12 @@ name = "spin"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6e63cff320ae2c57904679ba7cb63280a3dc4613885beafb148ee7bf9aa9042d"
+
+[[package]]
+name = "static_vcruntime"
+version = "1.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a88c15d6fe7210ea80c578b53855615fdea0188e1630b6d9c377e1b2f2c098fa"
 
 [[package]]
 name = "syn"
@@ -760,9 +766,9 @@ dependencies = [
 
 [[package]]
 name = "webpki"
-version = "0.22.0"
+version = "0.22.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f095d78192e208183081cc07bc5515ef55216397af48b873e5edcd72637fa1bd"
+checksum = "07ecc0cd7cac091bf682ec5efa18b1cff79d617b84181f38b3951dbe135f607f"
 dependencies = [
  "ring",
  "untrusted",
